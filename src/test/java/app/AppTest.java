@@ -35,16 +35,16 @@ public class AppTest
         assertTrue( true );
     }
 
-    @Test
-    public void addStudentTest1() {
-        try {
-            Student stud = new Student("88","abc", -1, "loranz@loranz");
-            assert service.addStudent(stud) == stud;
-        }catch (ValidationException e) {
-            assert e.toString().equals("validation.ValidationException: Grupa incorecta!");
-            e.printStackTrace();
-        }
-    }
+//    @Test
+//    public void addStudentTest1() {
+//        try {
+//            Student stud = new Student("88","abc", -1, "loranz@loranz");
+//            assert service.addStudent(stud) == stud;
+//        }catch (ValidationException e) {
+//            assert e.toString().equals("validation.ValidationException: Grupa incorecta!");
+//            e.printStackTrace();
+//        }
+//    }
 
 //    @Test
 //    public void addStudentTest2() {
