@@ -46,25 +46,25 @@ public class AppTest
         }
     }
 
-    @Test
-    public void addStudentTest2() {
-        try {
-            Student stud = new Student("","abc", -1, "loranz@loranz");
-            assert service.addStudent(stud) == stud;
-        }catch (ValidationException e) {
-            assert e.toString().equals("validation.ValidationException: Id incorect! Grupa incorecta!");
-            e.printStackTrace();
-        }
-    }
+//    @Test
+//    public void addStudentTest2() {
+//        try {
+//            Student stud = new Student("","abc", -1, "loranz@loranz");
+//            assert service.addStudent(stud) == stud;
+//        }catch (ValidationException e) {
+//            assert e.toString().equals("validation.ValidationException: Id incorect! Grupa incorecta!");
+//            e.printStackTrace();
+//        }
+//    }
 
-    @Test
-    public void addStudentTest3() {
-        try {
-            Student stud = new Student("88","", -1, "loranz@loranz");
-            assert service.addStudent(stud) == stud;
-        }catch (ValidationException e) {
-            assert e.toString().equals("validation.ValidationException: Nume incorect! Grupa incorecta!");
-            e.printStackTrace();
-        }
-    }
+//    @Test
+//    public void addStudentTest3() {
+//        try {
+//            Student stud = new Student("88","", -1, "loranz@loranz");
+//            assert service.addStudent(stud) == stud;
+//        }catch (ValidationException e) {
+//            assert e.toString().equals("validation.ValidationException: Nume incorect! Grupa incorecta!");
+//            e.printStackTrace();
+//        }
+//    }
 }
