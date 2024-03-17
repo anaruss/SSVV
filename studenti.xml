@@ -20,4 +20,8 @@
         <Nume>Ion</Nume>
         <Grupa>227</Grupa>
     </student>
+    <student ID="10">
+        <Nume>aa</Nume>
+        <Grupa>222</Grupa>
+    </student>
 </Entitati>

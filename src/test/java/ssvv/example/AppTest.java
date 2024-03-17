@@ -13,6 +13,8 @@ import ssvv.example.validation.StudentValidator;
 import ssvv.example.validation.TemaValidator;
 import ssvv.example.validation.Validator;
 
+import static org.junit.Assert.assertEquals;
+
 
 /**
  * Unit test for simple App.
@@ -35,6 +37,6 @@ public class AppTest
 
     @org.junit.jupiter.api.Test
     void saveStudent_studentId_0_saveSuccess() {
-        Assertions.assertEquals(service.saveStudent("10", "aa", 222), 0);
+        assertEquals(service.saveStudent("10", "aa", 222), 0);
     }
 }
