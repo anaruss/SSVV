@@ -1,5 +1,6 @@
 package ssvv.example;
 
+import org.junit.Test;
 import org.junit.jupiter.api.Assertions;
 import ssvv.example.domain.Nota;
 import ssvv.example.domain.Student;
@@ -35,8 +36,8 @@ public class AppTest
     Service service = new Service(studentXMLRepository, temaXMLRepository, notaXMLRepository);
 
 
-    @org.junit.jupiter.api.Test
-    void saveStudent_studentId_0_saveSuccess() {
+    @Test
+    public void saveStudent_studentId_0_saveSuccess() {
         assertEquals(service.saveStudent("10", "aa", 222), 0);
     }
 }
