@@ -40,4 +40,9 @@ public class AppTest
     public void saveStudent_studentId_0_saveSuccess() {
         assertEquals(service.saveStudent("10", "aa", 222), 0);
     }
+
+    @Test
+    public void saveStudent_studentId_1_saveFail() {
+        assertEquals(service.saveStudent("1", "aa", 222), 1);
+    }
 }
