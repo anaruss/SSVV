@@ -37,7 +37,7 @@ public class AppTest
 
 
     @Test
-    public void tc_1_saveStudent() {
+    public void saveStudent_studentId_0_saveSuccess() {
         assertEquals(service.saveStudent("10", "aa", 222), 0);
     }
 }
