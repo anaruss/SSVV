@@ -37,17 +37,22 @@ public class AppTest
 
 
     @org.junit.jupiter.api.Test
-    public void saveStudent_studentId_0_saveSuccess() {
+    public void tc_1_saveStudent_success_studentId_10() {
         assertEquals(service.saveStudent("10", "aa", 222), 0);
     }
 
     @org.junit.jupiter.api.Test
-    public void saveStudent_studentId_1_saveFail() {
+    public void tc_2_saveStudent_fail_studentId_1() {
         assertEquals(service.saveStudent("1", "aa", 222), 1);
     }
 
     @org.junit.jupiter.api.Test
-    public void saveStudent_studentId_negative1_saveFail() {
+    public void tc_3_saveStudent_success_studentId_10() {
+        assertEquals(service.saveStudent("10", "aa", 1), 0);
+    }
+
+    @org.junit.jupiter.api.Test
+    public void tc_4_saveStudent_fail_studentId_negative1() {
         assertEquals(service.saveStudent("-1", "aa", 222), 1);
     }
 }
