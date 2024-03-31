@@ -41,13 +41,13 @@ public class AppTest
         assertEquals(service.saveStudent("10", "aa", 222), 0);
     }
 
-//    @Test
-//    public void saveStudent_studentId_1_saveFail() {
-//        assertEquals(service.saveStudent("1", "aa", 222), 1);
-//    }
-//
-//    @Test
-//    public void saveStudent_studentId_negative1_saveFail() {
-//        assertEquals(service.saveStudent("-1", "aa", 222), 1);
-//    }
+    @org.junit.jupiter.api.Test
+    public void saveStudent_studentId_1_saveFail() {
+        assertEquals(service.saveStudent("1", "aa", 222), 1);
+    }
+
+    @org.junit.jupiter.api.Test
+    public void saveStudent_studentId_negative1_saveFail() {
+        assertEquals(service.saveStudent("-1", "aa", 222), 1);
+    }
 }
