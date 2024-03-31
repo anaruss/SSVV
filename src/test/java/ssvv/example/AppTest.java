@@ -47,8 +47,8 @@ public class AppTest
     }
 
     @org.junit.jupiter.api.Test
-    public void tc_3_saveStudent_success_studentId_10() {
-        assertEquals(service.saveStudent("10", "aa", 1), 0);
+    public void tc_3_saveStudent_fail_studentId_10() {
+        assertEquals(service.saveStudent("10", "aa", 1), 1);
     }
 
     @org.junit.jupiter.api.Test
