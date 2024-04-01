@@ -14,6 +14,7 @@ import ssvv.example.validation.StudentValidator;
 import ssvv.example.validation.TemaValidator;
 import ssvv.example.validation.Validator;
 
+import static java.sql.Types.NULL;
 import static org.junit.Assert.assertEquals;
 
 
@@ -64,5 +65,29 @@ public class AppTest
     @org.junit.jupiter.api.Test
     public void tc_6_saveStudent_name_emptyString_saveFail() {
         assertEquals(service.saveStudent("20", "", 222), 1);
+    }
+    @org.junit.jupiter.api.Test
+    public void tc_7_saveStudent_success_empty_group_input() {
+        assertEquals(service.saveStudent("60", "Dan", NULL), 1);
+    }
+
+    @org.junit.jupiter.api.Test
+    public void tc_8_saveStudent_fail_studentId_0() {
+        assertEquals(service.saveStudent("0", "Dan", 222), 1);
+    }
+
+    @org.junit.jupiter.api.Test
+    public void tc_9_saveStudent_studentId_maxInt_saveFail() {
+        assertEquals(service.saveStudent("maxint", "Alin", 222), 1);
+    }
+
+    @org.junit.jupiter.api.Test
+    public void tc_10_saveStudent_fail_group_negative() {
+        assertEquals(service.saveStudent("20", "Ana", -1), 1);
+    }
+
+    @org.junit.jupiter.api.Test
+    public void tc_11_saveStudent_group_maxInt_saveFail() {
+        assertEquals(service.saveStudent("20", "Ana", Integer.MAX_VALUE), 1);
     }
 }
