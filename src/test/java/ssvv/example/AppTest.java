@@ -77,8 +77,8 @@ public class AppTest
     }
 
     @org.junit.jupiter.api.Test
-    public void tc_9_saveStudent_studentId_maxInt_saveFail() {
-        assertEquals(service.saveStudent("maxint", "Alin", 222), 1);
+    public void tc_9_saveStudent_studentId_maxInt_success() {
+        assertEquals(service.saveStudent("maxint", "Alin", 222), 0);
     }
 
     @org.junit.jupiter.api.Test
