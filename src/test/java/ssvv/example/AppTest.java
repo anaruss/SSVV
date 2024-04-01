@@ -58,6 +58,11 @@ public class AppTest
 
     @org.junit.jupiter.api.Test
     public void tc_5_saveStudent_fail_empty_input() {
-        assertEquals(service.saveStudent("", "", 222), 1);
+        assertEquals(service.saveStudent("", "Dan", 222), 1);
+    }
+
+    @org.junit.jupiter.api.Test
+    public void tc_6_saveStudent_name_emptyString_saveFail() {
+        assertEquals(service.saveStudent("20", "", 222), 1);
     }
 }
