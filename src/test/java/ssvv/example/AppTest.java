@@ -90,4 +90,20 @@ public class AppTest
     public void tc_11_saveStudent_group_maxInt_saveFail() {
         assertEquals(service.saveStudent("20", "Ana", Integer.MAX_VALUE), 1);
     }
+
+
+/**
+ * WBT - Lab 3
+ */
+
+    @org.junit.jupiter.api.Test
+    public void wbt_tc_1_saveTema_startlineBeforeDeadline_success() {
+        assertEquals(service.saveTema("4", "GUI", 4,3), 0);
+    }
+
+    @org.junit.jupiter.api.Test
+    public void wbt_tc_2_saveTema_startlineAfterDeadline_fail() {
+        assertEquals(service.saveTema("5", "Coding", 4, 5), 1);
+    }
+
 }
