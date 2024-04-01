@@ -38,12 +38,12 @@ public class AppTest
 
     @org.junit.jupiter.api.Test
     public void tc_1_saveStudent_success_studentId_10() {
-        assertEquals(service.saveStudent("100", "aki", 922), 0);
+        assertEquals(service.saveStudent("101", "aki", 222), 0);
     }
 
     @org.junit.jupiter.api.Test
     public void tc_2_saveStudent_fail_studentId_1() {
-        assertEquals(service.saveStudent("1", "aki", 922), 1);
+        assertEquals(service.saveStudent("101", "aki", 222), 1);
     }
 
     @org.junit.jupiter.api.Test
@@ -53,11 +53,11 @@ public class AppTest
 
     @org.junit.jupiter.api.Test
     public void tc_4_saveStudent_fail_studentId_negative1() {
-        assertEquals(service.saveStudent("-1", "aa", 922), 1);
+        assertEquals(service.saveStudent("-1", "aa", 222), 1);
     }
 
     @org.junit.jupiter.api.Test
     public void tc_5_saveStudent_fail_empty_input() {
-        assertEquals(service.saveStudent("", "", 322), 1);
+        assertEquals(service.saveStudent("", "", 222), 1);
     }
 }
