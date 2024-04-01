@@ -4,17 +4,9 @@
         <Nume>Laura</Nume>
         <Grupa>922</Grupa>
     </student>
-    <student ID="0">
-        <Nume>alin</Nume>
-        <Grupa>222</Grupa>
-    </student>
     <student ID="1">
         <Nume>Ana</Nume>
         <Grupa>221</Grupa>
-    </student>
-    <student ID="100">
-        <Nume>aki</Nume>
-        <Grupa>922</Grupa>
     </student>
     <student ID="2">
         <Nume>Maria</Nume>
@@ -24,12 +16,8 @@
         <Nume>Ion</Nume>
         <Grupa>227</Grupa>
     </student>
-    <student ID="-1">
-        <Nume>aa</Nume>
-        <Grupa>222</Grupa>
-    </student>
-    <student ID="10">
-        <Nume>aa</Nume>
+    <student ID="maxint">
+        <Nume>Alin</Nume>
         <Grupa>222</Grupa>
     </student>
 </Entitati>
