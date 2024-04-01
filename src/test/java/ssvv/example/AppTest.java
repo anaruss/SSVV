@@ -55,4 +55,9 @@ public class AppTest
     public void tc_4_saveStudent_fail_studentId_negative1() {
         assertEquals(service.saveStudent("-1", "aa", 922), 1);
     }
+
+    @org.junit.jupiter.api.Test
+    public void tc_5_saveStudent_fail_empty_input() {
+        assertEquals(service.saveStudent("", "", 322), 1);
+    }
 }
