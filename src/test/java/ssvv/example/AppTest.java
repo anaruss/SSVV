@@ -98,7 +98,7 @@ public class AppTest
 
     @org.junit.jupiter.api.Test
     public void wbt_tc_1_saveTema_startlineBeforeDeadline_success() {
-        assertEquals(service.saveTema("24", "Gui", 4, 3), 0);
+        assertEquals(service.saveTema("2", "Gui", 4, 3), 0);
     }
 
     @org.junit.jupiter.api.Test
