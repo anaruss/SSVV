@@ -106,4 +106,39 @@ public class AppTest
         assertEquals(service.saveTema("5", "Coding", 4, 5), 1);
     }
 
+    @org.junit.jupiter.api.Test
+    public void wbt_tc_3_saveTema_startline_0_saveFail() {
+        assertEquals(service.saveTema("12", "Math", 2, 0), 1);
+    }
+
+    @org.junit.jupiter.api.Test
+    void wbt_tc_4_saveTema_deadline_13_saveSuccess() {
+        assertEquals(service.saveTema("13", "Abc", 13,12), 0);
+    }
+
+    @org.junit.jupiter.api.Test
+    void wbt_tc_5_saveTema_deadline_15_saveFail() {
+        assertEquals(service.saveTema("14", "Finals", 15, 12), 1);
+    }
+
+    @org.junit.jupiter.api.Test
+    void wbt_tc_6_saveTema_startline_and_deadline_negative_saveFail() {
+        assertEquals(service.saveTema("15", "Exercises", -2, -1), 1);
+    }
+
+    @org.junit.jupiter.api.Test
+    void wbt_tc_7_saveTema_startline_20_and_deadline_25_saveFail() {
+        assertEquals(service.saveTema("16", "A", 25, 20), 1);
+    }
+
+    @org.junit.jupiter.api.Test
+    void wbt_tc_8_saveTema_id_emptyString_saveFail() {
+        assertEquals(service.saveTema("", "Squares", 6,5), 1);
+    }
+
+    @org.junit.jupiter.api.Test
+    void wbt_tc_9_saveTema_descriere_emptyString_saveFail() {
+        assertEquals(service.saveTema("27", "", 6, 5), 1);
+    }
+
 }
