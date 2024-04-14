@@ -113,7 +113,7 @@ public class AppTest
 
     @org.junit.jupiter.api.Test
     void wbt_tc_4_saveTema_deadline_13_saveSuccess() {
-        assertEquals(service.saveTema("13", "Abc", 13,12), 0);
+        assertEquals(service.saveTema("13", "Abc", 13, 12), 0);
     }
 
     @org.junit.jupiter.api.Test
