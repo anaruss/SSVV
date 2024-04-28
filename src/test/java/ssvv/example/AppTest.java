@@ -141,4 +141,63 @@ public class AppTest
         assertEquals(service.saveTema("27", "", 6, 5), 1);
     }
 
+/**
+ * BBT - Lab 4
+ */
+    
+    @org.junit.jupiter.api.Test
+    void bbt_tc_1_saveStudent() {
+        assertEquals(service.saveStudent("10", "Louie", 222), 0);
+    }
+
+    @org.junit.jupiter.api.Test
+    void bbt_tc_2_saveTema() {
+        assertEquals(service.saveTema("23", "ana", 13, 12), 0);
+    }
+
+    @org.junit.jupiter.api.Test
+    void bbt_tc_3_saveNota() {
+        assertEquals(service.saveNota("10","23",10,1,"Good enough!"),1);
+    }
+
+    @org.junit.jupiter.api.Test
+    void bbt_tc_4_saveAll() {
+        assertEquals(service.saveStudent("10", "Louie", 222), 0);
+        assertEquals(service.saveTema("23", "ana", 13, 12), 0);
+        assertEquals(service.saveNota("10", "23", 10, 1, "Good enough"),1);
+    }
+
+
+/**
+ * LAB 4 - TH
+ */
+
+    @org.junit.jupiter.api.Test
+    void incremental_tc_1_saveStudent() {
+        // Add a student
+        assertEquals(service.saveStudent("10", "aa", 222), 0);
+    }
+
+    @org.junit.jupiter.api.Test
+    void incremental_tc_2_saveTema() {
+        // Add a student
+        assertEquals(service.saveStudent("10", "aa", 222), 0);
+
+        // Add an assignment
+        assertEquals(service.saveTema("23", "aa", 13, 12), 0);
+    }
+
+    @org.junit.jupiter.api.Test
+    void incremental_tc_3_saveNota() {
+        // Add a student
+        assertEquals(service.saveStudent("10", "aa", 222), 0);
+
+        // Add an assignment
+        assertEquals(service.saveTema("23", "aa", 13, 12), 0);
+
+        // Add a grade
+        assertEquals(service.saveNota("10", "23", 10, 1, "Perfect!"), 1);
+    }
+    
+
 }

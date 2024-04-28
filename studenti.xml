@@ -24,4 +24,8 @@
 <Nume>Alin</Nume>
 <Grupa>222</Grupa>
 </student>
+<student ID="10">
+<Nume>Louie</Nume>
+<Grupa>222</Grupa>
+</student>
 </Entitati>

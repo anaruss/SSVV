@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <Entitati>
+<tema ID="23">
+<Descriere>ana</Descriere>
+<Deadline>13</Deadline>
+<Startline>12</Startline>
+</tema>
 <tema ID="24">
 <Descriere>Gui</Descriere>
 <Deadline>4</Deadline>
