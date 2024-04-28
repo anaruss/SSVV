@@ -188,7 +188,7 @@ public class AppTest
     }
 
     @org.junit.jupiter.api.Test
-    void incremental_tc_3_saveNota() {
+    void incremental_tc_3_saveTema() {
         // Add a student
         assertEquals(service.saveStudent("10", "aa", 222), 0);
 
